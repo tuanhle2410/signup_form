@@ -1,0 +1,148 @@
+<style>
+{
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* style the container */
+.container {
+  width: 50%;
+  margin:0 auto;
+  border-radius: 5px;
+  background-color: #DCDCDC;
+  padding: 20px 0 30px 0;
+}
+
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+/* style the submit button */
+input[type=submit] {
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #57A0D2;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="password"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+input[type="password"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.input_with_icon input[type="text"] {
+  padding-left: 40px;
+}
+.input_with_icon input[type="password"] {
+  padding-left: 40px;
+}
+
+.input_with_icon {
+  position: relative;
+}
+
+.input_with_icon i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  padding: 9px 8px;
+  color: mediumseagreen;
+  transition: 0.3s;
+}
+
+.input_with_icon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.input_with_icon input[type="password"]:focus + i {
+  color: dodgerBlue;
+}
+
+.input_with_icon.input_icon_bg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.input_with_icon.input_icon_bg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+.input_with_icon.input_icon_bg input[type="password"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+/* column layout */
+.col {
+  float: center;
+  width: 90%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* error text */
+p[type="error"] {
+	font-family: Calibri;
+	color: tomato;
+	padding-left: 10px;
+}
+</style>

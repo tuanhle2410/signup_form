@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- include css file -->
+<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+<div class="container" onsubmit= "return validateOnSubmit()" >
+	<div class="col">
+		<form name="sign_up_form">
+
+        <!-- Field: input full name -->
+        <div class="input_with_icon input_icon_bg">
+          <input type="text" name="full_name" placeholder="Your name" onkeyup="return validateFullname()" required>
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+          <p name="full_name_error" id="full_name_error" type="error"></p>
+        </div>
+
+        <!-- Field: input username -->
+        <div class="input_with_icon input_icon_bg">
+          <input type="text" name="user_name" placeholder="Username" onkeyup="return validateUsername()" required>
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+          <p name="user_name_error" id="user_name_error" type="error"></p>
+        </div>
+
+        <!-- Field: input password -->
+        <div class="input_with_icon input_icon_bg">
+          <input type="password" id="password" name="password" placeholder="Password" onkeyup="return validatePassword()" required>
+          <i class="fa fa-key fa-lg fa-fw" aria-hidden="true"></i>
+          <p name="password_error" id="password_error" type="error"></p>
+        </div>
+
+        <!-- Button: Submit all information -->
+        <input type="submit" value="Sign up">
+        
+    </form>
+	</div>
+</div>
+</body>
+
+<!-- include javascript file -->
+<script type="text/javascript" src="script.js"></script>
+</html>
