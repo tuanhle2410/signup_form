@@ -70,7 +70,7 @@ function validateUsername(){
 */
 function validatePassword(){
 	if (!password_regex.test(password.value)) {
-	    document.getElementById("password_error").innerHTML = "Password must contain at least 9 characters including at least 1 number, 1 letter, 1 special character";
+	    document.getElementById("password_error").innerHTML = "Password must contain at least 9 characters including at least 1 number, 1 letter, 1 special character!";
   	}else{
 		document.getElementById("password_error").innerHTML = "";
 	}
